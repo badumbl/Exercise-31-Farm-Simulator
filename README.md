@@ -108,10 +108,14 @@ Implement the class MilkingRobot, and test it using the following program body. 
         MilkingRobot milkingRobot = new MilkingRobot();
         Cow cow = new Cow();
         milkingRobot.milk(cow);
-    Exception in thread "main" java.lang.IllegalStateException: The MilkingRobot hasn't been installed
-            at farmsimulator.MilkingRobot.milk(MilkingRobot.java:17)
-            at farmsimulator.Main.main(Main.java:9)
-    Java Result: 1
+Expected print output:
+
+     Exception in thread "main" java.lang.IllegalStateException: The MilkingRobot hasn't been installed
+                at farmsimulator.MilkingRobot.milk(MilkingRobot.java:17)
+                at farmsimulator.Main.main(Main.java:9)            
+        Java Result: 1
+
+
     MilkingRobot milkingRobot = new MilkingRobot();
     Cow cow = new Cow();
     System.out.println("");
