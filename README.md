@@ -88,7 +88,7 @@ Implement the class Cow, and test whether it works with the following program bo
     System.out.println(cow);
     cow.milk();
     System.out.println(cow);
-    The program print output can be like the following.
+The program print output can be like the following.
 
     Liekki 0.0/23.0
     Liekki 7.0/23.0
@@ -196,7 +196,7 @@ Farms have got an owner, a barn and a herd of cows. Farm also implements our old
     System.out.println(farm);
 
     System.out.println(farm.getOwner() + " is a tough guy!");
-    Expected print output:
+Expected print output:
 
     Farm owner: Esko
     Barn bulk tank: 0.0/2000.0
@@ -207,7 +207,7 @@ Farms have got an owner, a barn and a herd of cows. Farm also implements our old
     farm.addCow(new Cow());
     farm.addCow(new Cow());
     System.out.println(farm);
-    Expected print output:
+Expected print output:
 
     Farm owner: Esko
     Barn bulk tank: 0.0/2000.0
@@ -224,7 +224,7 @@ Farms have got an owner, a barn and a herd of cows. Farm also implements our old
     farm.liveHour();
     farm.liveHour();
     System.out.println(farm);
-    Expected print output:
+Expected print output:
 
     Farm owner: Esko
     Barn bulk tank: 0.0/2000.0
