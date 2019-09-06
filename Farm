@@ -1,0 +1,54 @@
+package farmsimulator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Farm implements Alive {
+
+    private String name;
+    private Barn barn;
+    private List<Cow> list = new ArrayList<Cow>();
+
+    public Farm(String name, Barn barn) {
+        this.name = name;
+        this.barn = barn;
+    }
+
+    public void addCow(Cow cow) {
+        this.list.add(cow);
+    }
+
+    public String getOwner() {
+        return this.name;
+    }
+
+    @Override
+    public void liveHour() {
+        for (Cow check : this.list) {
+            check.liveHour();
+        }
+
+    }
+    public void installMilkingRobot(MilkingRobot robot){
+        this.barn.installMilkingRobot(robot);
+    }
+
+    public void manageCows() {
+        this.barn.takeCareOf(list);
+        //
+    }
+
+    @Override
+    public String toString() {
+        String cows = "";
+        for (Cow check : this.list) {
+            cows += "        " + check.toString() + "\n";
+        }
+        if (!this.list.isEmpty()) {
+            return "Farm owner: " + this.name + "\n" + "Barn bulk tank: " + barn.toString() + "\n" + "Animals:" + "\n" + cows;
+        } else {
+            return "Farm owner: " + this.name + "\n" + "Barn bulk tank: " + barn.toString() + "\n" + "No cows.";
+        }
+    }
+
+}
