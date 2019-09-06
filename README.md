@@ -17,19 +17,19 @@ Also, implement the toString method for your BulkTank. The toString method descr
 
 Test your bulk tank with the following program chunk:
 
-BulkTank tank = new BulkTank();
-tank.getFromTank(100);
-tank.addToTank(25);
-tank.getFromTank(5);
-System.out.println(tank);
+    BulkTank tank = new BulkTank();
+    tank.getFromTank(100);
+    tank.addToTank(25);
+    tank.getFromTank(5);
+    System.out.println(tank);
 
-tank = new BulkTank(50);
-tank.addToTank(100);
-System.out.println(tank);
+    tank = new BulkTank(50);
+    tank.addToTank(100);
+    System.out.println(tank);
 The program print output should look like the following:
 
-20.0/2000.0
-50.0/50.0
+    20.0/2000.0
+    50.0/50.0
 Note that when you call the println() method of the out object of class System, the method receives as paramater an Object variable; in such case, the print output is determined by the overwritten toString() method in BulkTank! We are in front of a case of polymorphism, because the method can work with different types.
 
 Exercise 31.2: Cow
@@ -43,13 +43,13 @@ double getAmount() returns the amount on milk available in the cow's udders
 String toString() returns a String which describes the cow (see the example below)
 Cow also implement the following interfaces: Milkable, which describes the cow's faculty for being milked, and Alive, which represents their faculty for being alive.
 
-public interface Milkable {
+    public interface Milkable {
     public double milk();
-}
+    }
 
-public interface Alive {
+    public interface Alive {
     public void liveHour();
-}
+    }
 When a cow is milked, all their milk provision is taken to be processed. As long as a cow lives, their milk provision increases slowly. In Finland, milking cows produce 25-30 litres of milk every day, on the average. We simulate this by producing 0.7-2 litres every hour.
 
 If a cow is not given a name, they are assigned a random one from the list below.
