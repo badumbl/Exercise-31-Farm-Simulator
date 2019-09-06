@@ -202,6 +202,8 @@ Expected print output:
     Barn bulk tank: 0.0/2000.0
     No cows.
     Esko is a tough guy!
+
+
     Farm farm = new Farm("Esko", new Barn(new BulkTank()));
     farm.addCow(new Cow());
     farm.addCow(new Cow());
@@ -215,6 +217,8 @@ Expected print output:
             Naatti 0.0/19.0
             Hilke 0.0/30.0
             Sylkki 0.0/29.0
+
+
     Farm farm = new Farm("Esko", new Barn(new BulkTank()));
 
     farm.addCow(new Cow());
@@ -232,6 +236,8 @@ Expected print output:
             Heluna 2.0/17.0
             Rima 3.0/32.0
             Ilo 3.0/25.0
+
+
     Farm farm = new Farm("Esko", new Barn(new BulkTank()));
     MilkingRobot robot = new MilkingRobot();
     farm.installMilkingRobot(robot);
