@@ -132,7 +132,7 @@ Implement the class MilkingRobot, and test it using the following program body. 
     milkingRobot.milk(cow);
     System.out.println("Bulk tank: " + tank);
     System.out.println("");
-}
+    }
 The print output of the program can look like the following:
 
     Bulk tank: 0.0/2000.0
