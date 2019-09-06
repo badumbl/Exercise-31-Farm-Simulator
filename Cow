@@ -48,12 +48,21 @@ public class Cow implements Milkable, Alive {
 
     @Override
     public double milk() {
-        return this.amount = 0;
+        double forReturn = this.amount;
+        this.amount = 0;
+        return forReturn;
+
     }
 
     @Override
     public void liveHour() {
-        this.amount += 0.7 + new Random().nextInt((int) 2.1);
+
+        double feed = Math.ceil(0.7) + new Random().nextInt((int) 2.1);
+        if (feed + this.amount > this.capacity) {
+            this.amount = this.capacity;
+        } else {
+            this.amount += feed;
+        }
     }
 
 }
