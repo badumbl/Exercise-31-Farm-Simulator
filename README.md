@@ -115,6 +115,7 @@ Expected print output:
                 at farmsimulator.Main.main(Main.java:9)            
         Java Result: 1
 
+Next:
 
     MilkingRobot milkingRobot = new MilkingRobot();
     Cow cow = new Cow();
@@ -206,7 +207,7 @@ Expected print output:
     Barn bulk tank: 0.0/2000.0
     No cows.
     Esko is a tough guy!
-
+Next:
 
     Farm farm = new Farm("Esko", new Barn(new BulkTank()));
     farm.addCow(new Cow());
@@ -221,7 +222,7 @@ Expected print output:
             Naatti 0.0/19.0
             Hilke 0.0/30.0
             Sylkki 0.0/29.0
-
+Next:
 
     Farm farm = new Farm("Esko", new Barn(new BulkTank()));
 
@@ -240,7 +241,7 @@ Expected print output:
             Heluna 2.0/17.0
             Rima 3.0/32.0
             Ilo 3.0/25.0
-
+Next:
 
     Farm farm = new Farm("Esko", new Barn(new BulkTank()));
     MilkingRobot robot = new MilkingRobot();
